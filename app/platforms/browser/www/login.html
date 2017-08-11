@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <title>Login page</title>
+    </head>
+    <body onload="init();">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/master.js"></script>
+        <script type="text/javascript" src="js/model.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+
+
+        <div class="container">
+
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Login</h2>
+                <label for="TxtUsuario" class="sr-only">Usuário</label>
+                <input type="text"  id="TxtUsuario" class="form-control" placeholder="Usuário" required="" autofocus="">
+                <label for="TxtSenha" class="sr-only">Password</label>
+                <input type="password" id="TxtSenha" class="form-control" placeholder="Senha" required="">
+                
+                <button type="button" class="btn btn-lg btn-primary btn-block" id="BtnLogin">Login</button>
+                <p class="block">Não tem cadastro?</p>
+                <button type="button" class="btn btn-lg btn-secondary btn-block" id="BtnCadastrar">Cadastra-se</button>
+
+            </form>
+
+        </div>        
+    </body>
+</html>

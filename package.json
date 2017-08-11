@@ -1,0 +1,20 @@
+{
+  "name": "ERP_ITAU",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "latest",
+    "sqlite3": "latest",
+    "node-serialize":"latest",
+    "ionic":"latest",
+    "cordova":"latest",
+    "cors":"latest"
+  },
+  "config":{"Ambiente":"dev"},
+  "scripts":
+  {
+    "start":"npm run start-service",
+    "start-service":"node main.js %npm_package_config_Ambiente%",
+    "start-emulator":"cordova run android" ,
+    "navigate-app":"cd app"
+  }
+}

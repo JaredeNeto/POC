@@ -1,0 +1,4 @@
+{
+    "InitDBSQL":"./data\\migration\\001.sql",
+    "WebAPIPort":"1010"
+}

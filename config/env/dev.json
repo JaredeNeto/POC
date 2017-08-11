@@ -1,0 +1,14 @@
+{
+    "InitDBSQL":"./data\\migration\\001.sql",
+    "DBPath":"./erp.db",
+    "MigrationPath":"./data\\migration\\",
+    "WebAPIPort":"1010",
+    "Enum":
+    {
+        "Perfil":
+        {
+            "Admin":"Admin",
+            "Cliente":"Cliente"
+        }
+    }
+}

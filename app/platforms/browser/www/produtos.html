@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Login page</title>
+    </head>
+    <body onload="init();">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/master.js"></script>
+        <script type="text/javascript" src="js/model.js"></script>
+        <script type="text/javascript" src="js/produtos.js"></script>
+       <!--  <input type="text" id="TxtConsulta" ></input>
+        <input type="button" >Consultar</input>        
+        <input type="button" id="BtnLogout">Logout</input>        
+       <table id="TbProdutos"></table>
+        <table id="TbCarrinho"></table>-->
+    <div class="container">
+        <div id="top" class="row">
+            <div class="col-md-3">
+                <h2>Itens</h2>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="input-group h2">
+                    <input class="form-control" id="TxtConsulta" type="text" placeholder="Pesquisar Itens">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" id="BtnConsultar">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary pull-right" id="BtnLogout">Logout</button>
+            </div>
+        </div>
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="TbProdutos">
+                
+            </tbody>
+        </table>
+
+         <div id="top" class="row">
+            <div id="LbCar" class="col-md-9">
+                <h2>Meu Carrinho</h2>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary pull-right" id="BtnFinalizarCompra">Finalizar Compra</button> 
+            </div>
+        </div>
+        <table id="TbCar" class="table" >
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Remover do carrinho</th>
+                </tr>
+            </thead>
+            <tbody id="TbCarrinho">
+                
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
