@@ -26,6 +26,6 @@ CREATE TABLE ChaveLogin (
 );
 
 
-INSERT INTO Usuario VALUES ('admin@gmail.com', 'admin', 'admin');
+INSERT INTO Usuario VALUES ('admin', 'admin', 'admin');
 INSERT INTO Produto VALUES (null, 'Apple watch', 3000);
 INSERT INTO Produto VALUES (null, 'Moto 360', 1600);
