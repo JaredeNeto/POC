@@ -30,7 +30,7 @@ CarrinhoRepository.finalizarCarrinho = function(email,callback)
 
         for(var produto in rows)
         {
-            listaIdProduto += "'"+rows[produto].Id+"',";
+            listaIdProduto += "'"+rows[produto].Produto_Id+"',";
         }
         
         listaIdProduto = listaIdProduto.substring(0,listaIdProduto.lastIndexOf(","))
